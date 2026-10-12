@@ -23,7 +23,6 @@ class LoginActivity : AppCompatActivity() {
         binding.loginButton.setOnClickListener {
             val email = binding.emailEditText.text.toString().trim()
             val password = binding.passwordEditText.text.toString()
-
             if (email.isEmpty() || password.isEmpty()) {
                 Toast.makeText(this, "Please enter your email and password", Toast.LENGTH_SHORT).show()
                 return@setOnClickListener
